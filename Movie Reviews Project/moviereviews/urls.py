@@ -19,6 +19,8 @@ from django.urls import path
 from movie import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('about/',views.about)
+    path('',views.home,name='home'),
+    path('about/',views.about), 
+    path('signup/', views.signup,name='signup'),
+
 ]
